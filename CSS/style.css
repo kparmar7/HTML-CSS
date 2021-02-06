@@ -1,0 +1,243 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color:wheat;
+    font-family: 'Flamenco', cursive;
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../IMG/Lo.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+.clearFix:after{
+    content: '.';
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+.header_images_row{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.logo{
+    height: 180px;
+    width: 180;
+    float: left;
+    margin-top: 40px;
+    
+}
+.main_nav{
+    float: right;
+    margin: 120px;
+}
+.main_nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+.main_nav li a{
+    padding: 5px;
+    color: wheat; 
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+}
+.main_nav li a:hover{
+    border-bottom: 2px solid #bf55ec;
+}
+.header_main_content{
+    width: 1150px;width: 100%;
+    position: absolute;
+    /* border: 1px solid red; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-48%, 50%);
+    margin-left: 40px;
+   
+}
+h1{
+    color: wheat;
+    font-size: 240%;
+    word-spacing: 6px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: none;
+    font-weight: lighter;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full{
+    background-color: transparent;
+    color: #bf55ec;
+    margin-right: 15px;
+    border: 1px solid #bf55ec;
+}
+.btn-full:hover{
+    background-color: thistle;
+    color: whitesmoke;
+}
+.btn-fulll{
+    background-color: transparent;
+    color: #fff;
+    margin-right: 15px;
+    border: 1px solid #fff;
+}
+.btn-fulll:hover{
+    background-color: thistle;
+    color: whitesmoke;
+}
+span{
+    animation: colorchange 1s infinite;
+}
+@keyframes colorchange{
+    0%{color: red;} 25%{color: #bf55ec;} 50%{color:yellow} 100%{color:wheat}
+}
+.mobile_icon{
+    display: none;
+}
+/* responsive Quieries */
+
+
+
+
+@media only screen and (max-width: 1150px){
+    .main_nav{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1151px){
+    h1{font-size: 200%; }
+    .header_main_conten{
+        width: 100%;
+        padding: 0 2%;
+    }
+    .mobile_icon{
+        display: inline-block;
+        color: wheat;
+        float: right;
+        margin: 120px
+    }
+    .main_nav{
+        float: left;
+    }
+    .main_nav li{
+        display: block;
+        margin-top: 10px;
+    }
+
+}
+@media only screen and (max-width: 855px){
+    .main_nav{
+        float: left;
+        margin: 30px;
+        margin-top: 120px;
+    }
+
+    .main_nav li a{
+        padding: 5px;
+        color: wheat; 
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 80%;
+        font-weight: 80;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    h1{font-size: 160%; }
+    .header_main_conten{
+        /* width: 100%; */
+        /* padding: 0 2%; */
+        margin: 400px;
+        margin-top: 120px;
+    }
+    .mobile_icon{
+        display: inline-block;
+        color: wheat;
+        float: right;
+        margin-right: 40px;
+    }
+    .main_nav{
+        float: left;
+        margin: 40px;
+        margin-top: 120px;
+    }
+
+    .main_nav li a{
+        padding: 5px;
+        color: wheat; 
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 80%;
+        font-weight: 80;
+    }
+    
+    .btn-full{
+        margin-bottom: 20px;
+        font-size: 80%;
+    }
+    .btn-fulll{
+        font-size: 80%;
+    }
+}
+
+@media only screen and (max-width: 620px){
+    .mobile_icon{
+        display: inline-block;
+        color: wheat;
+        float: right;
+        margin: 100px ;
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 580px){
+    h1{font-size: 120%; }
+
+    .mobile_icon{
+        display: inline-block;
+        color: wheat;
+        float: right;
+        margin-right: 20px;
+    }
+    .main_nav{
+        float: left;
+        margin: 10px;
+        margin-top: 120px;
+    }
+
+    .main_nav li a{
+        padding: 5px;
+        color: wheat; 
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 80%;
+        font-weight: 80;
+    }
+
+    .btn-full{
+        margin-bottom: 20px;
+        font-size: 50%;
+    }
+    .btn-fulll{
+        font-size: 50%;
+    }
+}
